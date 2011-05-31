@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+#status {
+    background-color: red;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    -webkit-transition: opacity 0.2s linear;
+    -webkit-user-select: none;
+}
+.ready #status {
+    background-color: green;
+    opacity: 0;
+}
+
+#c {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: default;
+}
+#c.ready {
+    background-color: #fff;
+}
